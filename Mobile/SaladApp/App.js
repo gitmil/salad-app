@@ -7,12 +7,12 @@
  */
 
 import React, {Component} from 'react';
-import LoginRouter from './src/Login'
+import AppRouter from './src/index';
 
 
 export default class App extends Component {
   render() {
-    return <LoginRouter/>
+    return <AppRouter/>
   }
 }
 

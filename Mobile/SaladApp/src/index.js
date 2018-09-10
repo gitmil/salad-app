@@ -1,11 +1,13 @@
 import React,{Component} from 'react';
-import LoginHome from './LoginHome';
-import GroupRouter from '../Groups/index';
+import LoginHome from './Login/LoginHome';
+import GroupRouter from './Groups/index';
+import HomeRoute from './Home/HomeRoute';
 import {DrawerNavigator} from "react-navigation"
 
 
-const LoginRouter = DrawerNavigator({
+const AppRouter = DrawerNavigator({
         Login : {screen : LoginHome },
+        HomeRoute : {screen : HomeRoute},
         GroupRouter : {screen : GroupRouter}
     },
     {
@@ -13,4 +15,4 @@ const LoginRouter = DrawerNavigator({
     }
 );
 
-export default LoginRouter;
+export default AppRouter;
