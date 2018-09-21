@@ -28,7 +28,7 @@ class LoginHome extends Component {
   onLogin(){
     console.log("Login pressed");
     let {username,password} = this.state;
-    this.props.navigation.navigate("GroupRouter");
+    this.props.navigation.navigate("HomeRoute");
   }
 
   render() {
