@@ -1,14 +1,14 @@
 import React,{Component} from 'react';
-import ActivityTab from './ActivityTab';
+import CheckInOutTab from './CheckInOutTab';
 import PaymentsTab from './PaymentsTab';
 import PreferenceTab from './PreferenceTab';
 import { createBottomTabNavigator } from 'react-navigation';
 
 
 const HomeRoute = createBottomTabNavigator({
-    ActivityTab : {screen : ActivityTab },//To Check-In/Check-out
-    PaymentsTab : {screen : PaymentsTab },
-    PreferenceTab : {screen : PreferenceTab }
+    CheckInOut : {screen : CheckInOutTab },//To Check-In/Check-out
+    Payments : {screen : PaymentsTab },
+    Preference : {screen : PreferenceTab }
 });
 
 export default HomeRoute;
