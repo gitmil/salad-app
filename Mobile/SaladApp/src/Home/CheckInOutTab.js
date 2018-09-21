@@ -23,13 +23,22 @@ class CheckInOutTab extends Component {
 
     render(){
         const {isNoSaladDay} = this.state;
+        const {isGoogleSignIn, userDetails} = this.props.navigation.state.params;
 
         return(
             <Container>
                 <HeaderComponent title="Check-In/Out"/>
                 <Content>
+                    {isGoogleSignIn &&
+                        <Card transparent>
+                            <CardItem>
+                                <Text>Welcome {userDetails.user.name} </Text>
+                            </CardItem>
+                        </Card>
+                    }
                     <Card>
                         <CardItem>
+                           
                             <Body>
                                 {isNoSaladDay &&
                                      <Text> Your Next salad is scheduled on Mon Sep 11</Text> 
