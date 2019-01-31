@@ -10,6 +10,7 @@
     "native-base": "^2.8.0",
     "react": "16.5.0",
     "react-native": "0.57.0",
+    "react-native-exception-handler": "^2.10.3",
     "react-native-firebase": "^5.0.0-rc4",
     "react-native-google-signin": "^1.0.0-rc5",
     "react-navigation": "^2.16.0"

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Container,Header,Content,Left,Title,Right,Form,Item,Label,Input,Button,Text,Card,CardItem,Body, Footer } from 'native-base';
 import {GoogleSignin,GoogleSigninButton,statusCodes} from 'react-native-google-signin';
+import {TextInput} from 'react-native';
 
 
 class LoginHome extends Component {
@@ -30,6 +31,7 @@ class LoginHome extends Component {
   }
 
   onLogin(){
+    this.test();
     console.log("Login pressed");
     let {username,password} = this.state;
     this.props.navigation.navigate("CheckInOut",{loginType:'registered'});
@@ -75,6 +77,10 @@ class LoginHome extends Component {
               <Item floatingLabel>
                 <Label>Password</Label>
                 <Input maxLength={50} onChangeText={(password)=>this.setState({password})} secureTextEntry={true}/>
+              </Item>
+              <Item floatingLabel>
+                <Label>Text Input</Label>
+                <TextInput maxLength={50} onChangeText={(password)=>this.setState({password})} />
               </Item>
             </Form>
             <CardItem>
